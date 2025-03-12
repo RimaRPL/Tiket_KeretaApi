@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic";
 // get data jadwal
 
 import { getServerCookie } from "@/helper/server-cookie"

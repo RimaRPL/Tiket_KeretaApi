@@ -105,7 +105,7 @@ const Seat = (myProp: Props) => {
                         <button
                             type="submit"
                             className="px-4 py-2 rounded-md bg-sky-700 hover:bg-sky-600 text-white">
-                            Yes, i'm sure
+                            Yes, i am sure
                         </button>
                     </div>
                 </form>

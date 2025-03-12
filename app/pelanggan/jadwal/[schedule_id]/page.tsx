@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic";
 // get kereta by jadwal
 
 import { KeretaType, ScheduleType } from "@/app/karyawan/types";
@@ -63,13 +64,13 @@ const getTrainBySchedule =
     }
 
 type Props = {
-    params : {
+    params : Promise<{
         schedule_id : number
-    }
+    }>
 }
 
 const KeretaDetailPage = async (myProp : Props) => {
-    const schedule_id = Number(myProp.params.schedule_id)
+    const schedule_id = Number((await myProp.params).schedule_id)
     const detailSchedule = await getScheduleDetail(schedule_id)
     const detailKereta = await getTrainBySchedule(schedule_id)
 

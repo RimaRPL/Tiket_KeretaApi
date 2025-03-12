@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic";
 import { ScheduleType } from "@/app/karyawan/types"
 import FilterJadwal from "./FilterJadwal"
 import { getServerCookie } from "@/helper/server-cookie"
@@ -28,10 +29,10 @@ const getJadwal = async (
 }
 
 type Props = {
-    searchParams: {
+    searchParams: Promise<{
         departured_location?: string
         arrived_location?: string
-    }
+    }>
 }
 
 const JadwalPage= async (myProp: Props) => {
