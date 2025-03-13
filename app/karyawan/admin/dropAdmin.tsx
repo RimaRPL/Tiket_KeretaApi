@@ -81,12 +81,12 @@ const DropAdmin = (myProp: props) => {
                             Hapus Data Admin
                         </h1>
                         <span className="text-sm text-slate-500">
-                            Beneran ni dihapus                        </span>
+                            Beneran ni dihapus  </span>
                     </div>
 
                     {/* modal body */}
                     <div className="w-full p-3">
-                        Are u sure to delete this items ?
+                        Apakah anda yakin untuk menghapus ?
                     </div>
 
                     {/* modal footer */}
@@ -94,12 +94,12 @@ const DropAdmin = (myProp: props) => {
                         <button
                             type="button" onClick={() => closeModal()}
                             className="px-4 py-2 rounded-md bg-slate-700 hover:bg-slate-600 text-white">
-                            Close
+                            Tidak
                         </button>
                         <button
                             type="submit"
                             className="px-4 py-2 rounded-md bg-sky-700 hover:bg-sky-600 text-white">
-                            Yes, i'm sure
+                            Ya, saya yakin
                         </button>
                     </div>
                 </form>
