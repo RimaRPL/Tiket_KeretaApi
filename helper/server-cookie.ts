@@ -4,7 +4,7 @@
  * session
  */
 
-import Cookies from "js-cookie"
+
 import { cookies } from "next/headers"
 
 
